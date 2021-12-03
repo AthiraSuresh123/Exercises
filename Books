@@ -1,0 +1,45 @@
+public class Books {
+	
+	int count=0;
+	
+	String favoriteBooks[] = new String[50];
+	
+	public void addFavoriteBook(String bookName)
+	{
+		if(bookName.contains("Great"))
+		{
+			bookName=null;
+		}
+		else
+		{
+			favoriteBooks[count]=bookName;
+			count++;
+		}
+	}
+	
+	public void printFavoriteBooks()
+	{
+		
+		System.out.println("FAVORITE BOOKS: "+count);
+		
+		for(int i=0;i<count;i++)
+		{
+			System.out.println(favoriteBooks[i]);
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		Books obj = new Books();
+		
+		obj.addFavoriteBook("The Alchemist");
+		obj.addFavoriteBook("The Great Gatsby");
+		obj.addFavoriteBook("The Book Thief");
+		obj.addFavoriteBook("The Great Kapok Tree");
+		obj.addFavoriteBook("The Fault In Our Stars");
+		
+		obj.printFavoriteBooks();
+
+	}
+
+}
