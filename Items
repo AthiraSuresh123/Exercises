@@ -1,0 +1,16 @@
+public class Items {
+	
+	int itemId;
+	String shortDescription;
+	int price;
+	String brand;
+	
+	Items(int itemId, String shortDescription, int price, String brand)
+	{
+		this.itemId=itemId;
+		this.shortDescription=shortDescription;
+		this.price=price;
+		this.brand=brand;
+	}
+
+}
